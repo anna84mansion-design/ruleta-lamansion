@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#111,#1d1d1d);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.contenedor{
+    width:100%;
+    max-width:900px;
+    background:#1b1b1b;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(255,0,0,.35);
+}
+
+.logo{
+    width:150px;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#FFD700;
+    font-size:48px;
+    margin-bottom:10px;
+    text-shadow:0 0 15px #ff0000;
+}
+
+.subtitulo{
+    color:#ddd;
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.ruleta-contenedor{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:30px auto;
+}
+
+.flecha{
+    position:absolute;
+    top:-20px;
+    font-size:50px;
+    color:#FFD700;
+    z-index:100;
+    text-shadow:0 0 15px gold;
+}
+
+#ruleta{
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    border:10px solid #FFD700;
+    background:#333;
+    transition:transform 6s cubic-bezier(.17,.67,.12,.99);
+    animation:luces 1s infinite;
+}
+
+#girar{
+    margin-top:30px;
+    padding:18px 45px;
+    font-size:22px;
+    border:none;
+    border-radius:15px;
+    background:#d50000;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#girar:hover{
+    transform:scale(1.05);
+    background:#ff0000;
+}
+
+#resultado{
+    margin-top:30px;
+    min-height:120px;
+    color:#FFD700;
+    animation:none;
+}
+
+.reglas{
+    margin-top:40px;
+    background:#111;
+    padding:20px;
+    border-radius:15px;
+    text-align:left;
+}
+
+.reglas h2{
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+.reglas li{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+@keyframes luces{
+
+0%{
+box-shadow:
+0 0 10px gold,
+0 0 25px gold,
+0 0 40px red;
+}
+
+50%{
+box-shadow:
+0 0 20px white,
+0 0 40px gold,
+0 0 60px red;
+}
+
+100%{
+box-shadow:
+0 0 10px gold,
+0 0 25px gold,
+0 0 40px red;
+}
+
+}
+
+@keyframes zoom{
+
+0%{
+transform:scale(.5);
+opacity:0;
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+@media(max-width:768px){
+
+#ruleta{
+width:340px;
+height:340px;
+}
+
+h1{
+font-size:34px;
+}
+
+#girar{
+width:100%;
+}
+
+}
