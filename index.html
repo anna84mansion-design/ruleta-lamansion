@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta VIP | La Mansión</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <img src="imagen/logo.png" class="logo" alt="Logo La Mansión">
+
+    <h1>🎡 RULETA VIP</h1>
+
+    <p class="subtitulo">
+        Gira la ruleta y gana increíbles premios.
+    </p>
+
+    <div class="ruleta-contenedor">
+
+        <div class="flecha">▼</div>
+
+        <canvas
+            id="ruleta"
+            width="700"
+            height="700">
+        </canvas>
+
+    </div>
+
+    <button id="girar">
+        🎡 GIRAR RULETA
+    </button>
+
+    <div id="resultado"></div>
+
+    <div class="reglas">
+
+        <h2>REGLAS</h2>
+
+        <ol>
+
+            <li>Un giro por visita.</li>
+
+            <li>Solo una persona por habitación participa.</li>
+
+            <li>Presenta el código en recepción.</li>
+
+            <li>Envía el premio por WhatsApp indicando el número de habitación.</li>
+
+        </ol>
+
+    </div>
+
+</div>
+
+<audio id="ruletaSonido" src="sonidos/giro.mp3"></audio>
+
+<audio id="ganadorSonido" src="sonidos/ganador.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
