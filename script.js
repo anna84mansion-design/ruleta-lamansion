@@ -8,17 +8,17 @@ const boton = document.getElementById("girar");
 const resultado = document.getElementById("resultado");
 
 const premios = [
-    "🍺 Pacenita",
-    "🧢 Gorra",
-    "🔑 Llavero",
-    "⏰ Hora Gratis",
-    "💰 20% OFF",
-    "🍷 Copa Sangría",
-    "🍫 Chocolate",
-    "❤️ Lubricante",
-    "🍀 Sigue Participando",
-    "🎁 Premio Sorpresa"
-];
+"🍺 Paceñita",
+"❤️ Lubri especial",
+"🔑 Llavero",
+"⚡ Energizante",
+"💰 20% OFF",
+"🍫 Chocolate",
+"❤️ Lubricante",
+"🍀 Sigue Participando",
+"🎁 Premio Sorpresa",
+"🧴 Punto acumulativo para tomatodo"
+];
 
 const colores = [
     "#E53935",
